@@ -8,10 +8,10 @@ DB_CONFIG = {
     "port": int(os.getenv("DB_PORT", 5432)),
     "dbname": os.getenv("DB_NAME", "BI_SDM"),
     "user": os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASS", "ClairDeLune31")
+    "password": os.getenv("DB_PASS", "your_password")
 }
 
-DATA_DIR = os.getenv("DATA_DIR", "../../../Dataset/ril")
+DATA_DIR = os.getenv("DATA_DIR", "./data/raw")
 
 FILES = {
     "dosen_fif": "Data Dosen FIF.xlsx",
