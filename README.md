@@ -3,6 +3,7 @@
 Pipeline ETL modular berbasis Python untuk mengintegrasikan 14 dataset SDM, pengajaran (EDOM), penelitian, pengabdian masyarakat (Abdimas), dan publikasi Fakultas Informatika (FIF) Telkom University ke dalam **Star Schema PostgreSQL (`BI_SDM`)**.
 
 ## Struktur Direktori
+
 ```text
 ├── sql/
 │   └── ddl_bi_sdm.sql       # DDL Star Schema (Dimensi & Fakta)
@@ -14,3 +15,16 @@ Pipeline ETL modular berbasis Python untuk mengintegrasikan 14 dataset SDM, peng
 ├── main.py                  # Orkestrator utama pipeline ETL
 ├── .env.example             # Template konfigurasi environment
 └── requirements.txt         # Daftar dependensi Python
+```
+
+## Cara Menjalankan
+
+1. Install dependensi:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Salin `.env.example` menjadi `.env`, lalu sesuaikan kredensial PostgreSQL dan path folder dataset (`DATA_DIR`).
+3. Buat database `BI_SDM` di PostgreSQL, lalu jalankan pipeline:
+   ```bash
+   python main.py
+   ```
