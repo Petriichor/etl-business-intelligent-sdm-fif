@@ -28,3 +28,13 @@ Pipeline ETL modular berbasis Python untuk mengintegrasikan 14 dataset SDM, peng
    ```bash
    python main.py
    ```
+
+
+### Opsi Cepat: Restore Database dari File Dump (Untuk Tim Dashboard)
+
+Jika tidak ingin menjalankan ulang pipeline Python ETL dari awal, anggota tim dapat langsung melakukan *restore* database yang sudah bersih menggunakan file `sql/bi_sdm_dump.sql`:
+
+1. Buat database kosong bernama `BI_SDM` di PostgreSQL (melalui pgAdmin atau `psql`).
+2. Jalankan perintah berikut di terminal:
+   ```bash
+   psql -U postgres -d BI_SDM -f sql/bi_sdm_dump.sql
