@@ -11,7 +11,7 @@ DB_CONFIG = {
     "password": os.getenv("DB_PASS", "your_password")
 }
 
-DATA_DIR = os.getenv("DATA_DIR", "./data/raw")
+DATA_DIR = os.getenv("DATA_DIR", "./dataset_directory/")
 
 FILES = {
     "dosen_fif": "Data Dosen FIF.xlsx",
@@ -57,6 +57,27 @@ UNIT_MAPPING = {
     "URUSAN SUMBER DAYA (FIF)": ("Urusan Sumber Daya FIF", "Unit Pendukung"),
     "URUSAN LAYANAN AKADEMIK (FIF)": ("Urusan Layanan Akademik FIF", "Unit Pendukung"),
     "URUSAN LABORATORIUM (FIF)": ("Urusan Laboratorium FIF", "Unit Pendukung"),
+    "S1 IF": ("S1 Informatika", "Program Studi"),
+    "PRODI S1 INFORMATIKA (INTERNASIONAL)": ("S1 Informatika", "Program Studi"),
+    "S1 PJJ": ("S1 PJJ Informatika", "Program Studi"),
+    "PRODI S1 PJJ IF": ("S1 PJJ Informatika", "Program Studi"),
+    "PRODI S1 RPL": ("S1 Rekayasa Perangkat Lunak", "Program Studi"),
+    "PRODI S1 DATA SAINS FIF": ("S1 Sains Data", "Program Studi"),
+    "PRODI  S1 TEK. INFORMASI": ("S1 Teknologi Informasi", "Program Studi"),
+    "PRODI S1 TEK. INFORMASI": ("S1 Teknologi Informasi", "Program Studi"),
+    "S2 IF": ("S2 Informatika", "Program Studi"),
+    "PRODI S2 INFORMATIKA": ("S2 Informatika", "Program Studi"),
+    "S2 FORENSIK": ("S2 Ilmu Forensik", "Program Studi"),
+    "PRODI S2 ILMU FORENSIK": ("S2 Ilmu Forensik", "Program Studi"),
+    "PRODI S3 INFORMATIKA": ("S3 Informatika", "Program Studi"),
+    "SDM": ("Urusan Sumber Daya FIF", "Unit Pendukung"),
+    "SDM FIF": ("Urusan Sumber Daya FIF", "Unit Pendukung"),
+    "KEUANGAN & SUMBER DAYA (FIF)": ("Urusan Sumber Daya FIF", "Unit Pendukung"),
+    "KK CITI": ("KK CITI", "Kelompok Keahlian"),
+    "URUSAN KEUANGAN & SUMBERDAYA FIF": ("Urusan Sumber Daya FIF", "Unit Pendukung"),
+    "LAYANAN AKADEMIK IF": ("Urusan Layanan Akademik FIF", "Unit Pendukung"),
+    "LABORAN FIF": ("Urusan Laboratorium FIF", "Unit Pendukung"),
+    "SEKPIM FIF": ("Sekretariat FIF", "Unit Pendukung"),
 }
 
 POSITION_MAPPING = {
@@ -77,11 +98,17 @@ POSITION_MAPPING = {
 STATUS_MAPPING = {
     "PEGAWAI TETAP": "Pegawai Tetap",
     "DOSEN PEGAWAI TETAP": "Pegawai Tetap",
-    "DOSEN PROFESIONAL (FULL TIME)": "Dosen Profesional Full Time",
-    "DOSEN PROFESIONAL FULL TIME": "Dosen Profesional Full Time",
-    "DOSEN PROFESIONAL (PART TIME)": "Dosen Profesional Part Time",
+    "DOSEN PEGAWAI TETAP (ALIH STATUS TPA)": "Pegawai Tetap",
+    "DOSEN PROFESIONAL (FULL TIME)": "Profesional Full Time",
+    "DOSEN PROFESIONAL FULL TIME": "Profesional Full Time",
+    "PROFESIONAL FULL TIME": "Profesional Full Time",
+    "DOSEN PROFESIONAL (PART TIME)": "Profesional Part Time",
+    "DOSEN PROFESIONAL PART TIME": "Profesional Part Time",
+    "DOSEN PERBANTUAN KOPERTIS": "Perbantuan Kopertis",
+    "DOSEN PERBANTUAN TELKOM": "Perbantuan Telkom",
     "DOSEN LUAR BIASA": "Dosen Luar Biasa",
     "CALON PEGAWAI TETAP": "Calon Pegawai Tetap",
     "PEGAWAI KONTRAK": "Pegawai Kontrak",
     "MAGANG": "Tenaga Layanan Harian / Magang",
+    "TPA PEGAWAI TETAP": "Pegawai Tetap",
 }
